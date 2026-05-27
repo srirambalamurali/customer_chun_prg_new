@@ -94,3 +94,4 @@ coverage.xml
 # Lock files (optional) - keep them if you want reproducible installs
 # package-lock.json
 # yarn.lock
+.vercel
