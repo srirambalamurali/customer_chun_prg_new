@@ -33,14 +33,14 @@
 .bg-orb-a {
   top: -120px;
   right: -80px;
-  background: radial-gradient(circle, rgba(94, 234, 212, 0.85), rgba(94, 234, 212, 0));
+  background: radial-gradient(circle, rgba(31, 111, 235, 0.85), rgba(31, 111, 235, 0));
   animation: float 12s ease-in-out infinite;
 }
 
 .bg-orb-b {
   bottom: -100px;
   left: -60px;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.65), rgba(245, 158, 11, 0));
+  background: radial-gradient(circle, rgba(199, 154, 43, 0.65), rgba(199, 154, 43, 0));
   animation: float 14s ease-in-out infinite reverse;
 }
 
@@ -80,8 +80,8 @@
   display: grid;
   place-items: center;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(94, 234, 212, 0.2), rgba(96, 165, 250, 0.25));
-  color: var(--accent);
+  background: linear-gradient(135deg, rgba(31, 111, 235, 0.18), rgba(58, 160, 201, 0.12));
+  color: #ffffff;
   font-size: 1.4rem;
 }
 
@@ -194,8 +194,8 @@
   place-items: center;
   border-radius: 16px;
   color: var(--accent);
-  background: rgba(94, 234, 212, 0.12);
-  border: 1px solid rgba(94, 234, 212, 0.22);
+  background: rgba(31, 111, 235, 0.08);
+  border: 1px solid rgba(31, 111, 235, 0.14);
 }
 
 .dashboard-grid {
@@ -255,8 +255,8 @@
 .field input:focus,
 .field select:focus {
   outline: none;
-  border-color: rgba(94, 234, 212, 0.65);
-  box-shadow: 0 0 0 4px rgba(94, 234, 212, 0.08);
+  border-color: rgba(31, 111, 235, 0.65);
+  box-shadow: 0 0 0 4px rgba(31, 111, 235, 0.08);
   transform: translateY(-1px);
 }
 
@@ -289,10 +289,10 @@
 }
 
 .primary-button {
-  color: #07101d;
-  background: linear-gradient(135deg, var(--accent), #8ef0e1);
-  box-shadow: 0 14px 30px rgba(94, 234, 212, 0.24);
-  font-weight: 800;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--accent), #4aa3ff);
+  box-shadow: 0 14px 30px rgba(31, 111, 235, 0.18);
+  font-weight: 700;
 }
 
 .secondary-button {
@@ -358,9 +358,9 @@
 }
 
 .risk-low {
-  color: #cffaf1;
-  background: rgba(94, 234, 212, 0.14);
-  border: 1px solid rgba(94, 234, 212, 0.24);
+  color: #dff8fb;
+  background: rgba(58, 160, 201, 0.12);
+  border: 1px solid rgba(58, 160, 201, 0.22);
 }
 
 .result-metrics {
@@ -404,7 +404,7 @@
 }
 
 .metric-fill.risk-low {
-  background: linear-gradient(90deg, #5eead4, #60a5fa);
+  background: linear-gradient(90deg, #3aa0c9, #4aa3ff);
 }
 
 .metric-fill.confidence {
@@ -497,8 +497,8 @@
 }
 
 .toast-info {
-  background: rgba(96, 165, 250, 0.16);
-  color: #dbeafe;
+  background: rgba(58, 160, 201, 0.16);
+  color: #dff8fb;
 }
 
 @keyframes rise {

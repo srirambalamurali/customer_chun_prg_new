@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { predictCustomer } from './api/client';
 import Footer from './components/Footer';
-import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import PredictionForm from './components/PredictionForm';
 import ResultCard from './components/ResultCard';
@@ -56,7 +55,6 @@ export default function App() {
 
       <div className="app-content">
         <Navbar />
-        <Hero />
 
         <main className="dashboard-grid">
           <PredictionForm loading={loading} onPredict={handlePredict} onReset={handleReset} />
