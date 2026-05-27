@@ -15,6 +15,8 @@ app = Flask(__name__)
 
 
 @app.route('/', methods=['POST'])
+@app.route('/predict', methods=['POST'])
+@app.route('/api/predict', methods=['POST'])
 def predict():
     try:
         payload = request.get_json(force=True)
