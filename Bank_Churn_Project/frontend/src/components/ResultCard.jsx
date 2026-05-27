@@ -31,8 +31,8 @@ export default function ResultCard({ result, loading }) {
         </div>
         <h2>Prediction results will appear here</h2>
         <p>
-          Submit a validated customer profile to see churn probability, confidence, and risk
-          guidance in a polished results card.
+          Submit a validated customer profile to see churn probability and risk guidance in a
+          polished results card.
         </p>
       </section>
     );
@@ -40,7 +40,6 @@ export default function ResultCard({ result, loading }) {
 
   const toneClass = riskTone(result.risk_level);
   const probabilityPercent = Math.round((result.probability || 0) * 100);
-  const confidencePercent = Math.round((result.confidence || 0) * 100);
 
   return (
     <section className="result-card glass-panel">
@@ -64,11 +63,9 @@ export default function ResultCard({ result, loading }) {
           </div>
         </article>
         <article>
-          <span>Confidence score</span>
-          <strong>{confidencePercent}%</strong>
-          <div className="metric-track">
-            <div className="metric-fill confidence" style={{ width: `${confidencePercent}%` }} />
-          </div>
+          <span>Risk level</span>
+          <strong>{result.risk_level}</strong>
+          <span>Based on the model's churn probability thresholds.</span>
         </article>
       </div>
 
